@@ -1,0 +1,15 @@
+N= input()
+N= int(N)
+X= [int(N) for N in input().split()]
+M= input()
+M= int(M)
+M2=M
+for h in (X) :
+   if h==1 and M2>0:
+       M2=M
+   if h>=2:
+        M2=M2-h
+if M2<=0 :
+    print("You Died")
+else:
+    print("Yes, you can")
