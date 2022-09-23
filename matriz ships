@@ -1,0 +1,31 @@
+#Entrada
+N, M = [int(x) for x in input().split()]
+
+matriz_A = []
+for i in range(N):
+   linha1 = [int(x) for x in input().split()]
+   matriz_A.append(linha1)
+
+matriz_B = []
+for j in range(M):
+   linha2 = [int(x) for x in input().split()]
+   matriz_B.append(linha2)
+
+matriz_C = []
+for a in range(N):
+    lista = []
+    for b in range(N):
+        lista.append(0)
+    matriz_C.append(lista)
+#Cálculo
+navesd = 0
+navepd = 0
+for l in range(M):
+  for k in range(matriz_B[l][1]):
+    if matriz_C[l][matriz_B[l][k]] != matriz_A[l][matriz_B[l][k]]:
+      navepd += 1
+    if navepd >= 1:
+      navesd += 1
+
+#Saída
+print(navesd)
