@@ -1,0 +1,10 @@
+n, m = [int(x) for x in input().split()]
+matriz=[]
+maior_soma= 0 
+for i in range (n):
+    soma=0
+    for i in range(m):
+        soma+= matriz[n][m]
+    if soma > maior_soma:
+        maior_soma = soma 
+print(maior_soma)
