@@ -1,0 +1,21 @@
+#Entrada
+matriz_A = []
+matriz_B = []
+for i in range(7):
+  linha1 = [int(x) for x in input().split()]
+  soma1 = sum(linha1)
+  matriz_A.append(linha1)
+  matriz_B.append(soma1)
+  soma3 = sum(matriz_B)
+soma2 = 0
+
+#Cálculo
+for j in range(7):
+  for i in range(7):
+    if matriz_A[i][j] == 1 and matriz_A[i][j] == matriz_A[j][i]:
+      soma2 += 1
+      matriz_A[i][j] = 0
+total = soma3 - soma2
+
+#Saída
+print(total)
