@@ -1,0 +1,12 @@
+N=input()
+N= int(N)
+M=[int(N) for N in input().split()]
+C=input()
+C=int(C)
+w=0
+for x in M:
+    if x==C:
+        print(C)
+        w=1
+if w!=1 :
+    print(-1)
