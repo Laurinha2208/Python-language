@@ -1,0 +1,17 @@
+N, M= [int(x) for x in input().split()]
+matriz=[]
+soma=0
+for n in range (N):
+    linha =[int(x) for x in input().split()]
+
+maior_soma= 0 
+
+for n in range (N):
+    soma=0
+    for m in range(M):
+        soma += matriz[n][m]
+    if soma > maior_soma:
+        maior_soma = soma 
+        
+
+print(maior_soma)
