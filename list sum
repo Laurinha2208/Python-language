@@ -1,0 +1,11 @@
+N= input()
+N= int(N)
+M= [int(N) for N in input().split()]
+somatotal=sum(M)
+Y=(somatotal//2)
+  
+soma = 0
+for i in range(N):
+     soma += M[i]
+     if soma==Y:
+         print(i+1)
