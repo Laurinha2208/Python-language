@@ -1,0 +1,30 @@
+x, y = input().split()
+valor = int(input().split())
+dano = int(input().split())
+x = int(x)
+y = int(y)
+valoresItens = []
+danoItens = []
+cont = 0
+melhorItem = 0
+valorItem = 0
+for i in range(y):
+    valoresItens.append(valor)
+
+for i in range(y):
+    danoItens.append(dano)
+
+for i in range (y):
+    if i == 0 and valoresItens[i] <= x:
+        melhorItem = danoItens[i]
+        valorItem = valoresItens[i]
+        cont += 1
+    if danoItens[i] > melhorItem and valoresItens[i] <= x:
+        melhorItem = danoItens[i]
+        valorItem = valoresItens[i]
+        cont += 1
+
+if cont > 1:
+    print(valorItem, melhorItem)
+else:
+    print("Yan Pobre")
