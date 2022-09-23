@@ -1,0 +1,12 @@
+S=input()
+S=str(S)
+Q,P=input().split()
+P=str(P)
+Q=int(Q)
+D=S.replace(" ", "")
+if D.count(P)==Q:
+    print(Q)
+    print("SIM!")
+else:
+    print(D.count(P))
+    print("NAO!")
