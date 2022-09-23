@@ -1,0 +1,7 @@
+N=input()
+N= int(N)
+M=[int(N) for N in input().split()]
+lista=[]
+for M in reversed(M):
+    print(M,end=" ")
+print()
