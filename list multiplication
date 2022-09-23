@@ -1,0 +1,10 @@
+S,N= input().split()
+S=int(S)
+N= int(N)
+li=[0]*N
+for i in range (S):
+    P=input()
+    P=int(P)
+    for i in range (0,N,P):
+        li[i]=1
+print(*li)
